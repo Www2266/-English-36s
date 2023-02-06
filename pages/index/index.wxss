@@ -1,0 +1,63 @@
+Page {
+  background-color: #fff
+}
+.body {
+  padding: 40rpx;
+}
+
+.greeting {
+  margin-top: 200rpx;
+  margin-bottom: 60rpx;
+  font-size: 60rpx;
+  text-align: center;
+}
+.item {
+  display: flex;
+  flex-direction: row;
+  line-height: 60rpx;
+}
+.number {
+  width: 70rpx;
+
+}
+
+.content {
+  width: 600rpx;
+}
+
+.btnArea {
+  margin-top: 50rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+.stop {
+  width: 250rpx;
+  border-radius: 50rpx;
+  border: #e6e6e6 1rpx solid;
+  background-color: rgb(241, 177, 58);
+  color: #fff;
+}
+
+.next {
+  border-radius: 50rpx;
+  width: 250rpx;
+  border: #e6e6e6 1rpx solid;
+  background-color: rgb(59, 212, 59);
+  color: #fff;
+}
+
+.foot {
+  color: #bbe;
+  font-size: 25rpx;
+  position: fixed;
+  bottom: 20rpx;
+  width: 670rpx;
+  text-align: center;
+}
+.bg {
+  z-index: -10;
+  position: fixed;
+  bottom: 0;
+  width: 750rpx;
+}

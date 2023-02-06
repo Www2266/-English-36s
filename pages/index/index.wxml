@@ -1,0 +1,42 @@
+<view wx:if='{{!hasStart}}' class='body'>
+  <view class='greeting'>Are you ready?</view>
+  <view class='btnArea'>
+    <!-- <button class='stop' bindtap='stop'></button> -->
+    <button class='next' bindtap='next'>Start</button>
+  </view>
+</view>
+<view wx:else class='body'>
+  <view style='height:500rpx'>
+    <view class='item'>
+      <view class='number'>1.</view>
+      <view class='content'>{{prase[p1].content}}</view>
+    </view>
+    <view class='item'>
+      <view class='number'>2.</view>
+      <view class='content'>{{prase[p2].content}}</view>
+    </view>
+    <view class='item'>
+      <view class='number'>3.</view>
+      <view class='content'>{{prase[p3].content}}</view>
+    </view>
+    <view class='item'>
+      <view class='number'>4.</view>
+      <view class='content'>{{prase[p4].content}}</view>
+    </view>
+    <view class='item'>
+      <view class='number'>5.</view>
+      <view class='content'>{{sentence[s1].content}}</view>
+    </view>
+    <view class='item'>
+      <view class='number'>6.</view>
+      <view class='content'>{{sentence[s2].content}}</view>
+    </view>
+  </view>
+
+  <view class='btnArea'>
+    <button class='stop' bindtap='stop'>{{stop}}</button>
+    <button class='next' bindtap='next'>下一组</button>
+  </view>
+  <view class='foot' bindtap='contact'>联系我们</view>
+</view>
+<image wx:if='{{hasStart}}' mode='widthFix' class='bg' src='/bg/bg.jpeg'></image>
